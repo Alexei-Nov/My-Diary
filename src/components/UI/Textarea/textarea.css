@@ -1,0 +1,42 @@
+.textarea {
+	width: 100%;
+}
+
+.textarea__field {
+	border-radius: 4px;
+	background: var(--gray);
+	width: 100%;
+	min-height: 166px;
+	padding: 20px;
+	resize: none;
+	border: 1px solid transparent;
+	transition: all ease 0.5s;
+}
+
+.textarea__label {
+	margin-bottom: 2px;
+}
+
+.textarea__error {
+	color: var(--error);
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	opacity: 0;
+	transition: all ease 0.5s;
+	margin-left: auto;
+}
+
+.textarea__heading {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.textarea_error .textarea__error {
+	opacity: 1;
+}
+
+.textarea_error .textarea__field {
+	border-color: var(--error);
+}

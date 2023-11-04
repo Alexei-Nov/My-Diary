@@ -1,0 +1,40 @@
+.pagination {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 585px;
+	margin: 0 auto;
+	margin-top: 70px;
+	gap: 20px;
+	user-select: none;
+}
+
+.pagination__list {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.pagination__btn {
+	cursor: pointer;
+	display: flex;
+	transition: all ease 0.5s;
+}
+
+.pagination__btn_disable {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.pagination__item {
+	cursor: pointer;
+}
+
+.pagination__item_dots {
+	pointer-events: none;
+}
+
+.pagination__item_active {
+	color: var(--light-blue);
+	cursor: default;
+}
